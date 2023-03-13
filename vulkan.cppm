@@ -126,7 +126,6 @@ export module vulkan;
 
 export import :base;
 export import :handles;
-export import :structs;
 export import :enums;
 export import :string;
 export import :result;
