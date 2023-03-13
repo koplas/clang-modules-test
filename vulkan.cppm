@@ -125,7 +125,6 @@ extern "C" __declspec( dllimport ) FARPROC __stdcall GetProcAddress( HINSTANCE h
 export module vulkan;
 
 export import :base;
-export import :handles;
 export import :enums;
 export import :string;
 export import :result;
