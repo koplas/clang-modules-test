@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Files="vulkan-base.cppm vulkan-enums.cppm vulkan-string.cppm vulkan-result.cppm vulkan-handles.cppm vulkan-structs.cppm vulkan-funcs.cppm vulkan.cppm"
+Files="vulkan-base.cppm vulkan-enums.cppm vulkan-string.cppm vulkan-result.cppm vulkan-handles.cppm vulkan-structs.cppm vulkan.cppm"
 echo "Building vulkan module"
 for file in $Files; do
 	clang++ -std=c++20 -fprebuilt-module-path=. --precompile $file -o ${file%.*}.pcm
